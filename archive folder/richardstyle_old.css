@@ -1,0 +1,75 @@
+body {
+    background-image: url(/images/richardwallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.back{
+    position: fixed;
+    top: 20px;     
+    left: 20px;      
+}
+
+.back img{
+    width: 50px;
+}
+
+.back a:hover{
+    background-color: rgba(145, 129, 99, 0.4)
+}
+
+.header{
+    background-color: rgba(252, 252, 252, 0.7); /* 70% opacity */
+    width: 500px;
+    height: 75px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 10px;
+    text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white,     1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white, 2px 0 plum, -2px 0 plum, 0 2px plum, 0 -2px plum,    2px 1px plum, -2px 1px plum, 1px 2px plum, 1px -2px plum,    2px -1px plum, -2px -1px plum, -1px 2px plum, -1px -2px plum,    2px 2px plum, 2px -2px plum, -2px 2px plum, -2px -2px plum;
+}
+
+.header h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 25px;
+}
+.socials-item{
+    width: 50px;
+}
+
+.socials-item img{
+    width: 60px;
+}
+
+.label{
+    text-align: center;
+    font-size: large;
+}
+
+.main{
+    background-color: rgba(252, 252, 252, 0.7); /* 70% opacity */
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.main p{
+    padding: 70px;
+    font-size: 1.5em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

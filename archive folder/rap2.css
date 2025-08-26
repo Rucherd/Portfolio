@@ -1,0 +1,107 @@
+*{
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+  text-decoration: none; /* optional: remove underline */
+}
+
+html, body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f4e1;
+    border-bottom: black 2px solid;
+}
+/*PAGE 2 CSS*/
+
+.main2{
+    /*border: black 2px solid;*/
+
+    padding: 5%;
+    display: flex;
+
+    line-height: 1.2rem;
+}
+
+.left2{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5%;
+
+    /*border: black 2px solid;*/
+
+}
+
+.right2{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    /*border: black 2px solid;*/
+
+}
+
+.skills2{
+    
+    padding: 10px;
+    width: 80%;
+    margin: 0;
+    border: #eb6200 2px solid;
+    border-radius: 50px;
+
+    text-align: center;
+
+    background-color: #ffd0ae;
+}
+
+.blogpic2{
+    width: 250px;
+    border: #eb6200 2px solid;
+    border-radius: 50px;
+
+    text-align: center;
+    overflow: hidden;
+
+    background-color: #ffd0ae;
+    /*box-shadow: black 3px 3px 10px;*/ /*doesnt really look good*/
+
+}
+
+.blogpic2 p{
+    position: relative;
+    top: -10px;
+}
+
+.blogpic2 img{
+    width: calc(100% - 30px);
+    border-radius: 50px;
+    border: transparent 15px solid;
+}
+
+.left2 h1{
+    font-size: 3vw;
+    color: #4b352a;
+}
+
+
+/*#ffb784 2px solid;*/

@@ -1,0 +1,35 @@
+*{
+    text-decoration: none;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.main{
+    margin: 50px;
+}
+
+.pair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin: 0px 100px;
+}
+
+.vert{
+    width: 500px;
+}
+
+.hor{
+    height: 500px;
+}

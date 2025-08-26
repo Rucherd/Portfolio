@@ -1,0 +1,90 @@
+*{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+header img{
+    width: 10rem;
+    padding-top: 30px;
+}
+
+.frame{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+body{
+    background-color: #e8cace;
+}
+
+.main{
+    /*border: black 2px solid;*/
+    padding: 3em;
+    text-align: center;
+}
+
+.collage{
+    /*border: black 2px solid;*/
+    /*position: relative;
+    top: 50px;*/
+    margin: 3rem;
+}
+
+.collage img{
+    width: 40vw;
+}
+
+h1{
+    font-family: "Alumni Sans SC", sans-serif;
+    font-size: 7rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -50px;
+    margin-top: -50px;
+    font-weight: 300;
+    color: #cb962e;
+
+}
+
+h2{
+    font-family: "Imperial Script", cursive;
+    font-size: 7rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    color: #b4b49f;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7rem;
+    color: #8b210a;
+    padding: 0px 4rem;
+
+    /*border: black 2px solid;*/
+}
+
+.back{
+    position: fixed;
+    top: 10px;     
+    left: 30px;      
+}
+
+.back img{
+    width: 50px;
+    transition: 0.3s ease;
+}
+
+.back img:hover{
+    transform: scale(1.1);
+}

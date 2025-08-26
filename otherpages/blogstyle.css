@@ -1,0 +1,105 @@
+*{  /*applying to the whole page*/
+    font-family: 'Poppins', sans-serif; 
+    text-decoration: none;
+}
+
+body{
+    background-image: url("/images/busan.jpg");
+    background-size: cover;   
+    background-position: top center;
+    background-repeat: no-repeat;  
+    margin: 0; /*there was a weird gap between the header and the edge of the screen so this fixes that*/
+    height: 130vh; /*not good to force the length, but it works for now*/
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+}
+
+
+body > div.blank-box {
+    width: 100%;
+    height: 200px;
+    background-color: #eee transparent;
+    position: absolute;
+}
+
+
+
+h1{
+    font-size: 3em;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+}
+
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw;
+    background-color: rgba(255, 255, 255, 0.5); /*last parameter is for opacity*/
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /*box-shadow: offset-x offset-y blur-radius color; puts a small shadow below the header*/
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vw;
+}
+
+nav a{
+    padding: 12px 25px;
+    border: #000000 0;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0);
+    color: white;
+    transition: 0.3s ease; /*very cool transition when hovering, this line goes in the section where you want to apply the transition to all its children */
+}
+
+nav a:hover{ /*new transformations for when the user hovers*/
+    transform: scale(1.1);
+    background-color: rgb(255, 187, 0);
+    color: black;
+}
+
+.main div{
+    width: 25vw;
+    height: 50vh;
+    position: relative;
+    top: 200px;
+    left: 150px;
+    font-size: 1.2em;
+}
+
+.primary{
+    display: block;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.secondary{
+    display: block;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.back{
+    position: fixed;
+    top: 25px;     
+    left: 20px;      
+}
+
+.back img{
+    width: 50px;
+    transition: 0.3s ease;
+}
+
+.back img:hover{
+    transform: scale(1.1);
+}
