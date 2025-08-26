@@ -1,2 +1,2 @@
-# RJ-website
-R and J Website 
+# My Portfolio Website
+Welcome to my Portfolio website
