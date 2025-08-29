@@ -12,7 +12,7 @@ a:active {
 }
 
 body{
-    background-image: url(/images/korea/bluebg.jpg);
+    background-image: url(images/korea/bluebg.jpg);
     background-repeat: repeat;
     background-size: cover;
     /*background-color: #ffc2d1;*/

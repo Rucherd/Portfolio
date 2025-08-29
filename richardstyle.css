@@ -394,3 +394,38 @@ header a h1:hover {
   background-color: #dcfce7;
   color: #15803d;
 }
+
+/* contact */
+
+.contact-card {
+  background-color: #0f1b2e;    
+  color: #e6edf6;                 
+  padding: 40px;
+  width: 500px;
+  margin: 200px auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgb(114, 114, 114);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact-card .info p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #cdd6e5;
+}
+
+.contact-card .info a {
+  color: #2dd4bf; 
+  text-decoration: none;
+}
+
+.contact-card .info a:hover {
+  text-decoration: underline;
+}
