@@ -60,7 +60,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5%;
+    gap: 7%;
     background-color: #0F172A;
     position: fixed;
     z-index: 1;
@@ -265,6 +265,7 @@ header a h1:hover {
 }
 
 .tl-badge {
+  margin-top: 1.1rem;
   background: #dcfce7;
   border-radius: .5rem;
   color: #15803d;
@@ -280,13 +281,18 @@ header a h1:hover {
   color: #1d4ed8;
 }
 
+.badge-yellow {
+  background: #fef9c3;
+  color: #a16207;
+}
+
 .tl-bullets {
   color: #dbeafe;
-  margin: .6rem 0 .4rem 1rem;
+  margin: 1.8rem;
 }
 
 .tl-bullets li {
-  margin: .25rem 0;
+  margin: .5rem 0;
 }
 
 /* tech chips */
