@@ -213,7 +213,7 @@ header a h1:hover {
 
 .experience {
   margin: 2rem auto;
-  max-width: 1500px;
+  max-width: 85vw;
   padding: 3rem 1.25rem;
   /*border: black 2px solid;*/
 }
@@ -241,7 +241,6 @@ header a h1:hover {
   color: #F8FAFC;
   padding: 30px;
   transition: transform .15s ease, box-shadow .15s ease;
-  font-size: large;
 }
 
 .tl-card:hover {
