@@ -18,6 +18,7 @@ html, body{
     margin: 0;
     padding: 0;
     background-color: #F8FAFC;
+    scroll-behavior: smooth;
 }
 
 .picture {
@@ -392,74 +393,4 @@ header a h1:hover {
 .advanced {
   background-color: #dcfce7;
   color: #15803d;
-}
-
-
-/*PAGE 2 CSS*/
-
-.p2head{
-    width: 80%;
-    height: 8%;
-    text-align: left;
-
-    padding: 3.5% 10%;
-
-    /*border: black 2px solid;*/
-
-    align-content: center;
-
-    position: relative;
-
-}
-
-.p2head h1{
-    font-size: 2.5rem;
-    color: #4b352a;
-    margin: 0;
-    padding: 0;
-
- 
-}
-
-.main2{
-    /*border: black 2px solid;*/
-    justify-content: center;
-    align-items: flex-start;
-    align-content: center;
-    display: flex;
-
-    width: 100%;
-    height: 100%;
-
-    line-height: 1.2rem;
-}
-
-.left2, .right2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0;
-    margin: 0;
-
-    
-    gap: 7vh;
-    /*border: black 2px solid;*/
-
-}
-
-
-.skills2{
-    overflow: hidden;
-    padding: 0 15px;
-    width: 80%;
-    height: 8vw;
-    margin: 0;
-    border: #eb6200 2px solid;
-    border-radius: 50px;
-
-    text-align: center;
-
-    /*background-color: #ffd0ae;*/
 }
