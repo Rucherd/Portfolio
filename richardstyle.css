@@ -1,6 +1,7 @@
 * {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 a,
@@ -13,20 +14,25 @@ a:active {
 
 html,
 body {
-  height: 100%;
   width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
   background-color: #f8fafc;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-padding-top: 100px;
 }
 
 .picture {
-  width: 20vw;
-  height: 64vh;
+  width: clamp(220px, 24vw, 340px);
+  height: clamp(300px, 55vh, 560px);
   overflow: hidden;
   border-radius: 200px;
+  flex: 0 1 340px;
 }
 
 .picture img {
@@ -37,10 +43,17 @@ body {
 
 .page {
   width: 100%;
-  min-height: 100vh;
+  min-height: auto;
   height: auto;
+  margin-bottom: 0;
+}
 
-  margin-bottom: -75px;
+#aboutme {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
 }
 
 .headername {
@@ -56,14 +69,17 @@ body {
 
 header {
   width: 100%;
-  height: 80px;
-
+  min-height: 80px;
+  padding: 10px 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7%;
+  flex-wrap: wrap;
+  gap: clamp(0.75rem, 4vw, 5rem);
   background-color: #0f172a;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -92,32 +108,26 @@ header a h1:hover {
 }
 
 .mainframe {
-  width: 90%;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -45%);
-  width: 80%;
-  height: 65%;
-
-  padding: 2% 4%;
-
+  width: min(1120px, calc(100% - 32px));
+  min-height: 560px;
+  margin: 0 auto 48px;
+  padding: clamp(24px, 4vw, 48px);
   display: flex;
+  align-items: center;
+  gap: clamp(24px, 5vw, 64px);
   border: rgb(167, 167, 167) 5px solid;
 }
 
 .maintext {
-  position: relative;
   flex: 2;
   /*border: black 2px solid;*/
 
   display: flex;
   flex-direction: column;
   justify-content: left;
-  gap: 0;
+  gap: 0.5rem;
   white-space: normal;
-  padding-right: 30px;
+  padding-right: 0;
 }
 
 .picture {
@@ -126,7 +136,7 @@ header a h1:hover {
 }
 
 .maintext h1 {
-  font-size: 7vw;
+  font-size: clamp(3rem, 8vw, 7rem);
   color: #0d162b;
 
   margin: 0;
@@ -135,10 +145,9 @@ header a h1:hover {
 
 .maintext h2 {
   color: #0f8b7d;
-  font-size: 4vw;
+  font-size: clamp(1.8rem, 4.5vw, 4rem);
 
-  margin-top: -2.5vw;
-  margin-bottom: -0.7vw;
+  margin: 0;
   padding: 0;
 
   font-weight: 600;
@@ -146,23 +155,24 @@ header a h1:hover {
 
 .maintext h3 {
   color: #0f8b7d;
-  font-size: 1.5vw;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
 
   font-weight: 400;
 }
 
 .foot {
   display: flex;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  gap: 3%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: auto;
 
   /*border: black 2px solid;*/
 }
 
 .icon {
-  width: 6%;
+  width: 42px;
+  flex: 0 0 42px;
 }
 
 .icon img {
@@ -177,10 +187,12 @@ header a h1:hover {
   text-align: center;
 
   /*border: black 2px solid;*/
-  width: 20%;
+  min-width: 150px;
+  min-height: 48px;
+  padding: 10px 16px;
   border-radius: 25px;
   background-color: #0d162b;
-  font-size: 1vw;
+  font-size: 0.95rem;
   color: #f8fafc;
 
   transition: 0.3s ease;
@@ -194,7 +206,7 @@ header a h1:hover {
 
 .button p,
 .button {
-  line-height: 1.1vw;
+  line-height: 1.15;
   text-align: center;
   font-weight: 700;
 }
@@ -211,14 +223,14 @@ header a h1:hover {
 
 .experience {
   margin: 2rem auto;
-  max-width: 85vw;
-  padding: 3rem 1.25rem;
+  max-width: min(1120px, calc(100% - 32px));
+  padding: 3rem 0;
   /*border: black 2px solid;*/
 }
 
 .timeline {
   list-style: none;
-  padding: 0 5rem;
+  padding: 0;
 }
 
 .tl-item {
@@ -227,9 +239,9 @@ header a h1:hover {
 
 .xp-title {
   text-align: center;
-  font-size: 4rem;
+  font-size: clamp(2.25rem, 7vw, 4rem);
   font-weight: 800;
-  margin-bottom: 5rem;
+  margin-bottom: clamp(2rem, 6vw, 5rem);
   color: #1e293b;
 }
 
@@ -249,12 +261,13 @@ header a h1:hover {
 .tl-top {
   align-items: flex-start;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-between;
 }
 
 .tl-top h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1.15rem, 4vw, 1.5rem);
 }
 
 .tl-meta {
@@ -299,7 +312,8 @@ a.tl-link {
 
 .tl-bullets {
   color: #dbeafe;
-  margin: 1.8rem;
+  margin: 1.8rem 0 1.8rem 1.2rem;
+  padding-left: 1rem;
 }
 
 .tl-bullets li {
@@ -326,22 +340,22 @@ a.tl-link {
 .skills-section {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 40px 100px;
+  padding: 40px clamp(16px, 6vw, 100px);
   /*border: black, 2px, solid;*/
 }
 
 .skills-title {
   text-align: center;
-  font-size: 4rem;
+  font-size: clamp(2.25rem, 7vw, 4rem);
   font-weight: 800;
-  margin-bottom: 5rem;
+  margin-bottom: clamp(2rem, 6vw, 5rem);
   color: #1e293b;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: clamp(18px, 4vw, 40px);
   /*border: black, 2px, solid;*/
 }
 
@@ -374,6 +388,7 @@ a.tl-link {
   margin-bottom: 6px;
   color: #f8fafc;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 6px;
@@ -409,11 +424,15 @@ a.tl-link {
   background-color: #0f1b2e;
   color: #e6edf6;
   padding: 40px;
-  width: 500px;
-  margin: 200px auto;
+  width: min(500px, calc(100% - 32px));
+  margin: 120px auto 80px;
   border-radius: 16px;
   box-shadow: 0 10px 20px rgb(114, 114, 114);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-card .info {
+  overflow-wrap: anywhere;
 }
 
 .contact-card h2 {
@@ -436,4 +455,64 @@ a.tl-link {
 
 .contact-card .info a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 150px;
+  }
+
+  #aboutme {
+    align-items: flex-start;
+    padding-top: 150px;
+  }
+
+  header {
+    gap: 0.25rem 0.8rem;
+    padding: 8px 12px;
+  }
+
+  header a h1 {
+    font-size: 0.85rem;
+  }
+
+  header h1 {
+    padding: 3px 5px;
+  }
+
+  .mainframe {
+    flex-direction: column-reverse;
+    min-height: 0;
+    border-width: 3px;
+    text-align: center;
+  }
+
+  .picture {
+    width: min(260px, 78vw);
+    height: min(360px, 72vw);
+    flex-basis: auto;
+  }
+
+  .maintext h1 {
+    line-height: 1;
+  }
+
+  .foot {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .tl-card {
+    border-radius: 1rem;
+    padding: 20px;
+  }
+
+  .tl-badge,
+  a.tl-link {
+    white-space: normal;
+  }
+
+  .contact-card {
+    padding: 28px 20px;
+  }
 }
