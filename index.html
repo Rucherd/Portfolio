@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Richards Portfolio Website</title>
+    <title>Richard Liu Portfolio Website</title>
     <link rel="stylesheet" href="richardstyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,21 +37,30 @@
       <section class="mainframe">
         <div class="maintext">
           <h1>RICHARD LIU</h1>
-          <h2>Software Engineer</h2>
+          <h2>Computer Engineer</h2>
           <h3>
-            Hello! I’m passionate about building modern, efficient, and
-            user-friendly applications. With experience in full-stack
-            development, automation, and cloud technologies, I enjoy solving
-            complex problems and creating solutions that make an impact.
+            I build software close to both users and hardware, with experience
+            across embedded firmware, backend automation, cloud services, and
+            high-performance computing. My recent work includes bare-metal STM32
+            firmware, industrial communication protocols, CUDA-accelerated LiDAR
+            processing, and production Python/C# systems.
           </h3>
           <div class="foot">
             <div class="icon">
-              <a href="https://github.com/Rucherd" target="_blank">
+              <a
+                href="https://github.com/Rucherd"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="icons/github.png" alt="Github icon" />
               </a>
             </div>
             <div class="icon">
-              <a href="https://www.instagram.com/r.ichardl/" target="_blank">
+              <a
+                href="https://www.instagram.com/r.ichardl/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="icons/instaicon.png" alt="instagram icon" />
               </a>
             </div>
@@ -59,6 +68,7 @@
               <a
                 href="https://www.facebook.com/richard.liu.466472"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img src="icons/fbicon.png" alt="facebook icon" />
               </a>
@@ -67,6 +77,7 @@
               <a
                 href="https://www.linkedin.com/in/richard-liu-942818230/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img src="icons/liicon.png" alt="LinkedIn icon" />
               </a>
@@ -74,13 +85,12 @@
 
             <div class="spacer"></div>
             <a class="button" href="images/richard_liu_resume_2026.pdf" download
-              >Download <br />
-              Resume</a
+              >Download Resume</a
             >
           </div>
         </div>
         <div class="picture">
-          <img src="images/profilepicture.jpg" alt="YouTube icon" />
+          <img src="images/profilepicture.jpg" alt="Richard Liu portrait" />
         </div>
       </section>
     </section>
@@ -360,6 +370,7 @@
                   class="tl-link"
                   href="https://rucherd.github.io/RLweb/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   >Link to the Web App</a
                 >
                 <span class="tl-badge badge-blue">Project</span>
@@ -715,14 +726,78 @@
     </section>
 
     <section class="contact-card" id="contact">
-        <h2>Contact Information</h2>
-        <div class="info">
-            <p><strong>Email:</strong> <a href="mailto:richardliu715@gmail.com">richardliu715@gmail.com</a></p>
-            <p><strong>Phone:</strong> +1 (437) 360-8862</p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/richard-liu-942818230/" target="_blank">https://www.linkedin.com/in/richard-liu</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/Rucherd" target="_blank">github.com/Rucherd</a></p>
-            <p><strong>Location:</strong> North York, Toronto, ON</p>
-        </div>
-    </section> 
-</body>
+      <h2>Contact Information</h2>
+      <form
+        class="contact-form"
+        action="https://formsubmit.co/richardliu715@gmail.com"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="_subject"
+          value="New portfolio contact form message"
+        />
+        <input type="hidden" name="_template" value="table" />
+        <input type="text" name="_honey" class="hidden-field" tabindex="-1" />
+
+        <label for="contactName">Name</label>
+        <input
+          id="contactName"
+          name="name"
+          type="text"
+          autocomplete="name"
+          required
+        />
+
+        <label for="contactEmail">Email</label>
+        <input
+          id="contactEmail"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+        />
+
+        <label for="contactSubject">Subject</label>
+        <input id="contactSubject" name="subject" type="text" required />
+
+        <label for="contactMessage">Message</label>
+        <textarea
+          id="contactMessage"
+          name="message"
+          rows="6"
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="info">
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:richardliu715@gmail.com">richardliu715@gmail.com</a>
+        </p>
+        <p><strong>Phone:</strong> +1 (437) 360-8862</p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a
+            href="https://www.linkedin.com/in/richard-liu-942818230/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://www.linkedin.com/in/richard-liu</a
+          >
+        </p>
+        <p>
+          <strong>GitHub:</strong>
+          <a
+            href="https://github.com/Rucherd"
+            target="_blank"
+            rel="noopener noreferrer"
+            >github.com/Rucherd</a
+          >
+        </p>
+        <p><strong>Location:</strong> North York, Toronto, ON</p>
+      </div>
+    </section>
+  </body>
 </html>
