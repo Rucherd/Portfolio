@@ -90,6 +90,55 @@
       <section class="experience" id="experience">
         <h1 class="xp-title">EXPERIENCE</h1>
         <ol class="timeline">
+          <!-- Miniveil -->
+          <li class="tl-item">
+            <article class="tl-card">
+              <div class="tl-top">
+                <div>
+                  <h3>Firmware Engineer &bull; Miniveil Systems</h3>
+                  <p class="tl-meta">May 2026 - August 2026 &bull; Toronto, ON</p>
+                </div>
+                <span class="tl-badge">Contract</span>
+              </div>
+
+              <ul class="tl-bullets">
+                <li>
+                  Developed bare-metal C firmware for an STM32F103 ARM
+                  Cortex-M3 controller, integrating Ethernet, serial
+                  communication, timing, and control peripherals
+                </li>
+                <li>
+                  Implemented six Modbus RTU function codes over UART with
+                  CRC-16 validation, mapping device registers to fan, heat,
+                  fault, delay, and status controls
+                </li>
+                <li>
+                  Integrated a BACnet/IP server on a memory-constrained STM32
+                  microcontroller, enabling Who-Is/I-Am discovery and
+                  ReadProperty communication over W5500 Ethernet and UDP
+                </li>
+                <li>
+                  Resolved compiler, linker, protocol, and hardware integration
+                  failures by tracing defects across application, transport,
+                  driver, and physical layers
+                </li>
+                <li>
+                  Debugged end-to-end communication using UART traces,
+                  Wireshark, YABE, Tera Term, and J-Link across application,
+                  protocol, transport, driver, and hardware layers
+                </li>
+              </ul>
+
+              <div class="tl-tags">
+                <span>C</span><span>STM32</span><span>ARM Cortex-M3</span
+                ><span>Embedded Systems</span><span>Bare-Metal Firmware</span
+                ><span>Modbus RTU</span><span>BACnet/IP</span
+                ><span>W5500 Ethernet</span><span>UART</span><span>UDP</span
+                ><span>Wireshark</span><span>J-Link</span><span>YABE</span>
+              </div>
+            </article>
+          </li>
+
           <!-- OTPP -->
           <li class="tl-item">
             <article class="tl-card">
@@ -231,6 +280,79 @@
             <article class="tl-card">
               <div class="tl-top">
                 <div>
+                  <h3>CUDA-Accelerated LiDAR Voxelization</h3>
+                  <p class="tl-meta">August 2026</p>
+                </div>
+                <span class="tl-badge badge-blue">Project</span>
+              </div>
+
+              <ul class="tl-bullets">
+                <li>
+                  Developed CPU and GPU LiDAR voxelization pipelines in C++ and
+                  CUDA to convert KITTI point clouds into sparse 3D occupancy
+                  grids
+                </li>
+                <li>
+                  Implemented CUDA voxelization with spatial filtering and
+                  3D-to-1D indexing
+                </li>
+                <li>
+                  Benchmarked kernel and end-to-end performance with CUDA
+                  events and C++ timers, and built synchronized LiDAR, voxel,
+                  and camera playback in Plotly/Dash
+                </li>
+              </ul>
+
+              <div class="tl-tags">
+                <span>C++</span><span>CUDA</span><span>Python</span
+                ><span>LiDAR</span><span>GPU Programming</span
+                ><span>Point Clouds</span><span>Plotly/Dash</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="tl-item">
+            <article class="tl-card">
+              <div class="tl-top">
+                <div>
+                  <h3>V2I Shared Perception System</h3>
+                  <p class="tl-meta">September 2025 - March 2026</p>
+                </div>
+                <span class="tl-badge badge-blue">Project</span>
+              </div>
+
+              <ul class="tl-bullets">
+                <li>
+                  Designed a distributed Vehicle-to-Infrastructure perception
+                  platform that fused sensor data from multiple vehicles
+                </li>
+                <li>
+                  Implemented point-cloud alignment and YOLO-based object
+                  detection to detect obstacles beyond an individual vehicle's
+                  line of sight
+                </li>
+                <li>
+                  Achieved approximately 10 Hz map fusion and 200 ms
+                  end-to-end latency for real-time ADAS decision support
+                </li>
+                <li>
+                  Received the Certificate of Distinction and placed 2nd
+                  overall among Computer Engineering capstone projects
+                </li>
+              </ul>
+
+              <div class="tl-tags">
+                <span>Python</span><span>CARLA</span><span>YOLO</span
+                ><span>Distributed Systems</span><span>Point Clouds</span
+                ><span>ADAS</span><span>Computer Vision</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="tl-item">
+            <article class="tl-card">
+              <div class="tl-top">
+                <div>
                   <h3>Movie Catalogue Web App</h3>
                   <p class="tl-meta">August 2025 - Present</p>
                 </div>
@@ -277,38 +399,31 @@
             <article class="tl-card">
               <div class="tl-top">
                 <div>
-                  <h3>GIS Maps Project</h3>
-                  <p class="tl-meta">January 2023 - April 2023</p>
+                  <h3>GIS Mapping Engine</h3>
+                  <p class="tl-meta">January 2024 - April 2024</p>
                 </div>
                 <span class="tl-badge badge-blue">Project</span>
               </div>
 
               <ul class="tl-bullets">
                 <li>
-                  Collaborated in a team to build a comprehensive GIS
-                  (Geographic Information System) from scratch
+                  Used C++ to implement pathfinding algorithms including
+                  Dijkstra's and A* within a custom GIS system
                 </li>
-                <li>Leveraged the Open Street Maps API to acquire map data</li>
+                <li>
+                  Developed data structures for map representation and used the
+                  OpenStreetMap API for data acquisition
+                </li>
                 <li>
                   Applied spatial gridding and data grouping techniques to
-                  optimize frame rates and improve overall map performance.
-                </li>
-                <li>
-                  Employed Djikstra's algorithm with A Star heuristc and other
-                  programming techniques to design the graphical user interface
-                  (GUI) and implement pathfinding capabilities
-                </li>
-                <li>
-                  Ranked in the top 20 among hundreds of peers in a competitive
-                  challenge to develop the fastest solution for the Traveling
-                  Salesman Problem
+                  optimize frame rates and improve overall map performance
                 </li>
               </ul>
 
               <div class="tl-tags">
-                <span>C</span><span>C++</span><span>Algorithms</span
-                ><span>Data Structures</span><span>APIs</span
-                ><span>Git/Github</span>
+                <span>C++</span><span>Dijkstra's Algorithm</span><span>A*</span
+                ><span>Graph Data Structures</span><span>Priority Queues</span
+                ><span>OpenStreetMap API</span><span>Git/Github</span>
               </div>
             </article>
           </li>
